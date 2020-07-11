@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <body>
+            <h1>Get selected datalist option</h1>
+            <input type="text" name="getcolors" list="colors"/>
+            <datalist id="colors">
+                <option value="Red"></option>
+                <option value="Blue"></option>
+                <option value="Green"></option>
+            </datalist>
+            <span id="result"></span>
+            <script>
+                var getvalue=document.getElementsByName('getcolors')[0];
+                getvalue.addEventListener('input',function()
+                {
+                    document.getElementById("result").innerHTML="Selected value: "+this.value;
+                }
+                )
+            </script>
+        </body>
+    </head>
+</html>
