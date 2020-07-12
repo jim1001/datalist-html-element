@@ -1,6 +1,7 @@
 <html>
     <head>
         <body>
+            <!--Orig source: https://www.youtube.com/watch?v=5nJwLnOfwJI-->
             <h1>Get selected datalist option</h1>
             <input type="text" id="getcolors" list="colors"/>
             <datalist id="colors">
@@ -12,6 +13,7 @@
             <script>
                 var getvalue=document.getElementById('getcolors');
                 getvalue.addEventListener('input',function()
+                //Run fn below when input changes for element with id 'getcolors'
                 {
                     document.getElementById("result").innerHTML="My selected value: "+this.value;
                 }
