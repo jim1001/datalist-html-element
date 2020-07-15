@@ -11,11 +11,13 @@
             </datalist>
             <span id="result"></span>
             <script>
-                var getvalue=document.getElementById('getcolors');
-                getvalue.addEventListener('input',function()
-                //Run fn below when input changes for element with id 'getcolors'
+                var getvalue = document.getElementById('getcolors');
+                getvalue.addEventListener('change', function ()
+                //Run fn below when selection changes for element with id 'getcolors'
+                //(in original video he uses "input" which causes output to show as 
+                //soon as user starts typing. "change" is better)
                 {
-                    document.getElementById("result").innerHTML="My selected value: "+this.value;
+                    document.getElementById("result").innerHTML = "My selected value: " + this.value;
                 }
                 )
             </script>
